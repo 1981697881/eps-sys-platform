@@ -28,7 +28,7 @@ export default [
 
                 path: '/building-manager/list',
                 name: 'building-manager-list',
-                meta: {title: '区域楼栋列表', tab: true,keepAlive:true,keepAlive:true},
+                meta: {title: '区域楼栋列表', tab: true,keepAlive:true},
                 component: () => import(/* webpackChunkName: "views" */ '../views/building-manager/List'),
             }, {
 
@@ -205,6 +205,11 @@ export default [
                 name: 'extreme-speed-manager-list',
                 meta: {title: '极速达列表', tab: true,keepAlive:true},
                 component: () => import(/* webpackChunkName: "views" */ '../views/extreme-speed-manager/List'),
+            },{
+                path: '/work-order-management/list',
+                name: 'work-order-management-list',
+                meta: {title: '工单管理', tab: true,keepAlive:true},
+                component: () => import(/* webpackChunkName: "views" */ '../views/work-order-management/List'),
             },
         ]
     },

@@ -1,5 +1,5 @@
 //域名
-const domain = window.location.host + "/web";
+const domain = window.location.host + "/xinshuida";
 //端口
 const port = null;
 //路径
@@ -102,7 +102,12 @@ const api = {
     extremeSpeed: {
         list: `${root}/mobileReceivingRecord/jsdOrdersDetail`,
         update: `${root}/mobileDeliveryRecord/giveJSDOrder`,
-    },  
+    },
+    workOrder: {
+        list: `${root}/deliveryRecord/find`,
+        update: `${root}/deliveryRecord/updateWorkOrder`,
+        matching: `${root}/deliveryRecord/findOrder`,
+    },
     memberRefuseRecord: {
         list: `${root}/memberRefuseRecord/list`,
     },

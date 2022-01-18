@@ -8,12 +8,12 @@ module.exports = {
     devServer: {
         port: 8081,
         proxy: {
-            '/web': {
-              target: 'http://test.gzfzdev.com:5035',
+            '/xinshuida': {
+              target: 'http://epssys.kuyuntech.com:50025/xinshuida',
                 changeOrigin: true,
                 ws: true,
                 pathRewrite: {
-                    '^/web': ''
+                    '^/xinshuida': ''
                 }
             }
         }
